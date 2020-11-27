@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlovoryMart</title>
+    <link rel="shortcut icon" href="assets/img/small-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container-fluid">
+
+        <!-- navigation -->
+        <div class="navbar navbar-fixed-top">
+            <div class="box-navbar">
+                <a href="index.html" aria-current="page" class="logo">
+                    <img src="assets/img/logo.svg" alt="Logo" class="image-glovery-logo"/>
+                </a>
+                <div class="search-column">
+                    <input type="text" class="search-input form-control" id="search" name="search" placeholder="Search products">
+                </div>
+                <div class="right-nav">
+                    <div class="cart-btn btn" id="cart" data-toggle="modal" data-target="#cart_modal" data-toggle-class="modal-open-aside">
+                        <a href="#" class="image-cart-icon"></a>
+                        <!-- <a href="#"><img src="assets/img/icon-cart.svg" class="image-cart-icon"></a> -->
+                        <span class="badge">10</span>
+                    </div>
+                    <div class="login-btn btn">
+                        <a href="#" class="image-login-icon"></a>
+                        <!-- <a href="#"><img src="assets/img/icon-login.svg" class="image-login-icon"></a> -->
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+        <!-- product list -->
+        <div class="main-content">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="image-product">
+                        <img src="assets/img/qtela.png" alt="Qtela">
+                    </div>
+                    <div class="title-product">
+                        Qtela Tempe Cabai Rawit 55g
+                    </div>
+                    <div class="price-product">
+                        Rp 7.700
+                    </div>
+                    <div class="add-to-cart">
+                        <a href="#" class="btn-addcart">Add to cart</a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="image-product">
+                        <img style="width: 140px;" src="assets/img/fernleaf.png" alt="fernleaf">
+                    </div>
+                    <div class="title-product">
+                        Qtela Tempe Cabai 
+                    </div>
+                    <div class="price-product">
+                        Rp 7.700
+                    </div>
+                    <div class="add-to-cart">
+                        <a href="#" class="btn-addcart">Add to cart</a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="image-product">
+                        <img src="assets/img/qtela.png" alt="Qtela">
+                    </div>
+                    <div class="title-product">
+                        Qtela Tempe Cabai Rawit 55g
+                    </div>
+                    <div class="price-product">
+                        Rp 7.700
+                    </div>
+                    <div class="add-to-cart">
+                        <a href="#" class="btn-addcart">Add to cart</a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="image-product">
+                        <img style="width: 140px;" src="assets/img/fernleaf.png" alt="fernleaf">
+                    </div>
+                    <div class="title-product">
+                        Qtela Tempe Cabai Raw
+                    </div>
+                    <div class="price-product">
+                        Rp 7.700
+                    </div>
+                    <div class="add-to-cart">
+                        <a href="#" class="btn-addcart">Add to cart</a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="image-product">
+                        <img src="assets/img/qtela.png" alt="Qtela">
+                    </div>
+                    <div class="title-product">
+                        Qtela Tempe Cabai Rawit 55g
+                    </div>
+                    <div class="price-product">
+                        Rp 7.700
+                    </div>
+                    <div class="add-to-cart">
+                        <a href="#" class="btn-addcart">Add to cart</a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="image-product">
+                        <img style="width: 140px;" src="assets/img/fernleaf.png" alt="fernleaf">
+                    </div>
+                    <div class="title-product">
+                        Qtela Tempe Cabai Ra
+                    </div>
+                    <div class="price-product">
+                        Rp 7.700
+                    </div>
+                    <div class="add-to-cart">
+                        <a href="#" class="btn-addcart">Add to cart</a>
+                    </div>
+                </div>
+            </div> <!-- list of product in one row -->
+        </div> <!-- the main content contains the product -->
+    </div>
+
+    <!-- Modal -->
+    <div id="cart_modal" class="modal fade" data-backdrop="false" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-right w-xl">
+            <div class="modal-content h-100 no-radius">
+
+                <div class="modal-header"> 
+                    <a href="#" class="close-btn" data-dismiss="modal">
+                        <img src="assets/img/icon-close.svg" alt="Close" class="image-close-icon"/>
+                    </a>
+                    <div class="cart-title">Cart</div>
+                    <a href="#" class="clear-btn">Clear All</a>
+                    <!-- <div class="modal-title text-md">This will be modal title</div> <button class="close" data-dismiss="modal">&times;</button> -->
+                </div><hr class="line">
+
+                <div class="modal-body">
+                    <div class="row cart-product">
+                        <div class="col-xs-2 cart-image-product">
+                            <img src="assets/img/qtela.png" alt="Qtela"/>
+                        </div>
+                        <div class="col-xs-7 cart-product-detail">
+                            <div class="cart-product-name">
+                                FRISIAN FLAG UHT Purefarm Cokelat 225 ml
+                            </div>
+                            <div class="cart-product-counter">
+                                <a href="#" class="cart-btn-minus cart-counter">-</a>
+                                <div class="cart-total">1</div>
+                                <a href="#" class="cart-btn-plus cart-counter">+</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 cart-product-right">
+                            <div class="cart-product-remove">
+                                <a href="#" class="product-remove-icon">
+                                    <img src="assets/img/icon-remove.svg" alt="Icon Trash Can"/>
+                                </a>
+                            </div>
+                            <div class="cart-product-price">
+                                Rp 7.000
+                            </div>
+                        </div>
+                    </div><hr>
+                    <div class="row cart-product">
+                        <div class="col-xs-2 cart-image-product">
+                            <img src="assets/img/qtela.png" alt="Qtela"/>
+                        </div>
+                        <div class="col-xs-7 cart-product-detail">
+                            <div class="cart-product-name">
+                                FRISIAN FLAG UHT Purefarm Cokelat 225 ml
+                            </div>
+                            <div class="cart-product-counter">
+                                <a href="#" class="cart-btn-minus cart-counter">-</a>
+                                <div class="cart-total">1</div>
+                                <a href="#" class="cart-btn-plus cart-counter">+</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 cart-product-right">
+                            <div class="cart-product-remove">
+                                <a href="#" class="product-remove-icon">
+                                    <img src="assets/img/icon-remove.svg" alt="Icon Trash Can"/>
+                                </a>
+                            </div>
+                            <div class="cart-product-price">
+                                Rp 7.000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 modal-footer">
+                    <div class="cart-modal-footer">
+                        <a href="#" class="cart-btn-purchase">
+                            <div class="cart-purchase-text">Purchase Order</div>
+                            <div class="cart-footer-total">Rp 14.000</div>
+                        </a>
+                    </div>
+                </div>  <!-- modal footer -->
+
+            </div> <!-- modal content -->
+        </div> <!-- modal dialog -->
+    </div><!-- modal -->
+
+    <!-- footer -->
+    <div class="footer">
+        <p>© GlovoryMart - All rights reserved.</p>
+    </div>
+
+</body>
+</html>
